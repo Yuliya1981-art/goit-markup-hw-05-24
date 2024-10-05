@@ -250,10 +250,8 @@ main {
   align-items: center;
   justify-content: center;
   background-color: rgba(244, 244, 253, 1);
-  padding: 24px 100px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 264px;
   height: 112px;
   margin-bottom: 8px;
 }
@@ -278,12 +276,7 @@ main {
 }
 .social-list {
   display: flex;
-  max-width: 232px;
   justify-content: center;
-  margin-right: 16px;
-  margin-bottom: 32px;
-  margin-right: 16px;
-  margin-left: 16px;
   margin-top: 8px;
   flex-direction: row;
   gap: 24px;
@@ -345,9 +338,7 @@ main {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.team-avatar {
-  margin-bottom: 32px;
-}
+
 .team-member {
   font-weight: 500;
   font-size: 20px;
@@ -359,10 +350,6 @@ main {
 }
 
 .div-for-name-role {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   padding: 32px 0;
 }
 .members-role {
@@ -394,7 +381,6 @@ main {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 .product-type {
@@ -402,8 +388,6 @@ main {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-left: 16px;
-  margin-bottom: 32px;
 }
 
 .div-for-product-name-type {
@@ -490,17 +474,7 @@ main {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 300px;
-  margin-right: auto;
-  margin-top: 17.5px;
-}
-.div-for-social-media-footer {
-  max-width: 232px;
-  margin-right: 16px;
-  margin-bottom: 32px;
-  margin-right: 16px;
-  margin-left: 16px;
-  margin-top: 8px;
+  max-width: 264px;
 }
 
 .text-sosial-media {
@@ -518,11 +492,9 @@ main {
   justify-content: space-between;
 }
 .social-list-item-footer {
-  display: flex;
   width: 40px;
   height: 40px;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
 .social-list-link-footer {
@@ -543,14 +515,10 @@ main {
   background-color: #31d0aa;
 }
 
-.social-list-link-footer svg {
-  width: 16px;
-  height: 16px;
-}
+
 .div-for-subscribe-footer {
   display: flex;
-  flex-direction: column;
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .subscribe-text-footer {
@@ -584,6 +552,9 @@ main {
 .input-subscribe-footer::placeholder {
   color: #ffffff;
 }
+.div-for-subscribe-footer {
+  display: block;
+}
 
 .button-subscribe-footer {
   display: flex;
@@ -600,12 +571,19 @@ main {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-subscribe-footer {
   margin-left: 16px;
+  fill: #ffffff;
 }
-
+.button-subscribe-footer:hover {
+  background-color: #31d0aa;
+}
+.button-subscribe-footer:focus {
+  background-color: #31d0aa;
+}
 /*==================================== FOOTER STYLES  ====================================*/
 /*====================================modal window style====================================*/
 /* Стиль для фону модального вікна */
@@ -618,12 +596,12 @@ main {
   z-index: 9999;
   position: fixed;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /*opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none;*/
+  pointer-events: none;*
 }
 
-.modal-backdrop.is-open {
+.modal-backdrop .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -637,7 +615,6 @@ main {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
-  height: 80%;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
