@@ -599,7 +599,7 @@ main {
   pointer-events: none;
 }
 
-.modal-backdrop .is-open {
+.modal-backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
